@@ -3,12 +3,8 @@ package com.vivek.notes.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Getter;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.OneToMany;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
@@ -16,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "users")
 public class User {
 
     @jakarta.persistence.Id
